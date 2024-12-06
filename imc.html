@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculadora-imc">
+        <h1>Calculadora de IMC</h1>
+        <p>Descubra seu Índice de Massa Corporal (IMC):</p>
+        <form id="imcForm">
+            <label for="peso">Peso (kg):</label>
+            <input 
+                type="number" 
+                id="peso" 
+                step="0.1" 
+                placeholder="Exemplo: 70" 
+                required
+            >
+
+            <label for="altura">Altura (m):</label>
+            <input 
+                type="number" 
+                id="altura" 
+                step="0.01" 
+                placeholder="Exemplo: 1.75" 
+                required
+            >
+
+            <button 
+                type="button" 
+                onclick="calcularIMC()"
+            >
+                Calcular
+            </button>
+        </form>
+
+        <div id="resultado"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Matheus da Silva Chaves de Lira</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Estilo global para o corpo */
+body {
+    background-image: url("C:/Users/matheus.lira/OneDrive - Raiz Educação S A/Documentos/Portifólio Pessoal/assests/imagem1.jpg");
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que o fundo permaneça fixo */
+    color: white; /* Ajusta o texto para branco */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+
+/* Estilo geral para seções principais */
+section {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semitransparente */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 0; /* Remove curvas das bordas */
+    color: white; /* Texto branco */
+    max-width: 800px; /* Largura máxima da seção */
+    margin: 20px auto; /* Centraliza a seção na página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra nas seções */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+/* Link do Portfólio com imagem de fundo */
+.portfolio-link {
+    display: block; /* Torna o link um elemento de bloco */
+    width: 300px; /* Largura do link */
+    height: 150px; /* Altura do link */
+    margin: 20px auto; /* Centraliza o link na página */
+    background-image: url("assets/imagem1.jpg"); /* Caminho para a imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    border: 2px solid #333; /* Adiciona uma borda ao redor */
+    border-radius: 0; /* Remove curvas das bordas */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    line-height: 150px; /* Centraliza o texto verticalmente */
+    color: white; /* Texto branco */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.3s; /* Suaviza o efeito de hover */
+}
+
+.portfolio-link:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece o fundo ao passar o mouse */
+    color: #fff; /* Mantém o texto branco */
+}
+
+/* Estilo para links gerais */
+a {
+    display: inline-block; /* Transforma o link em bloco */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semitransparente */
+    color: white; /* Texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 0; /* Remove curvas das bordas */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 10px 0; /* Espaçamento entre links */
+    transition: 0.3s; /* Suaviza as transições */
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro ao passar o mouse */
+    color: black; /* Texto preto */
+}
+
+/* Estilo do cabeçalho e navegação */
+header nav ul {
+    list-style: none; /* Remove marcadores */
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente no menu */
+}
+
+header nav ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Estilo da Calculadora de IMC */
+#calculadora-imc {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    padding: 30px 20px; /* Espaçamento interno */
+    border-radius: 0; /* Bordas retas */
+    max-width: 500px; /* Largura máxima */
+    margin: 50px auto; /* Centraliza na página */
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Rótulos (labels) */
+#calculadora-imc label {
+    display: block; /* Cada rótulo em uma linha separada */
+    margin-bottom: 8px; /* Espaço entre o rótulo e o campo */
+    font-weight: bold; /* Negrito para os rótulos */
+    text-align: left; /* Alinha o rótulo à esquerda */
+    margin-left: 10%; /* Alinha os rótulos dentro da largura centralizada */
+}
+
+/* Campos de entrada (input) */
+#calculadora-imc input {
+    width: 80%; /* Largura dos campos */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 0; /* Bordas retas */
+    font-size: 16px; /* Aumenta o tamanho do texto */
+}
+
+/* Botão de Calcular */
+#calculadora-imc button {
+    width: 40%; /* Largura menor */
+    padding: 6px; /* Reduz o espaçamento interno */
+    background-color: #007BFF;
+    color: white;
+    font-size: 12px; /* Texto menor */
+    font-weight: bold;
+    border: 1px solid #0056b3; /* Borda fina */
+    border-radius: 0; /* Bordas retas */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    transition: 0.3s ease; /* Suaviza o efeito de hover */
+}
+
+#calculadora-imc button:hover {
+    background-color: #0056b3; /* Escurece o botão ao passar o mouse */
+}
+
+/* Área do resultado */
+#resultado {
+    margin-top: 15px;
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    color: white; /* Texto branco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    padding: 30px 20px; /* Espaçamento interno */
+    border-radius: 0; /* Remove curvas */
+    max-width: 500px; /* Largura máxima */
+    margin: 50px auto; /* Centraliza na página */
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Rótulos (labels) */
+#contato label {
+    display: block; /* Cada rótulo em uma linha separada */
+    margin-bottom: 8px; /* Espaço entre o rótulo e o campo */
+    font-weight: bold; /* Negrito para os rótulos */
+    text-align: left; /* Alinha o rótulo à esquerda */
+    margin-left: 10%; /* Alinha os rótulos dentro da largura centralizada */
+}
+
+/* Campos de entrada (input e textarea) */
+#contato input,
+#contato textarea {
+    width: 80%; /* Largura dos campos */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 0; /* Remove curvas */
+    font-size: 16px; /* Aumenta o tamanho do texto */
+}
+
+/* Campo de texto grande (textarea) */
+#contato textarea {
+    resize: none; /* Remove redimensionamento */
+    height: 150px; /* Aumenta a altura para mais espaço ao digitar */
+}
+
+/* Botão de envio */
+#contato button {
+    width: 40%; /* Reduz largura */
+    padding: 5px; /* Reduz o espaçamento interno */
+    background-color: #007BFF;
+    color: white;
+    font-size: 12px; /* Texto menor */
+    font-weight: bold;
+    border: 1px solid #0056b3; /* Borda fina */
+    border-radius: 0; /* Bordas retas */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    transition: 0.3s ease; /* Suaviza o efeito de hover */
+}
+
+#contato button:hover {
+    background-color: #0056b3; /* Escurece o botão ao passar o mouse */
+}
